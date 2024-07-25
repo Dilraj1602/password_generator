@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password_Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    
+    <div class="wrapper">
+<!-- container -->
+        <div class="container">
+
+            <h1 class="heading">PASSWORD GENERATOR</h1>
+
+            <!-- 1st div -->
+            <div class="first_div">
+                <div id="pass">PASSWORD</div>
+                <span class="copybtn"><img src="copy.svg" alt="" height="28px" width="28px"></span>
+            </div>
+
+            <!-- 2nd div -->
+
+            <div class="second_div">
+                <div class="pass_len">
+                    <h1>Password length</h1>
+                    <div class="length">10</div>
+                </div>
+
+                <div >
+                    <input type="range" min="1" max="20" value="10" step="1" class="slider">
+                </div>
+
+                <div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" id="uppercase" class="checkbox">
+                        <label for="uppercase" class="label_text">Include Uppercase Letters</label>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" id="Lowercase" class="checkbox">
+                        <label for="Lowercase" class="label_text">
+                            Include Lowercase Letters</label>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" id="number" class="checkbox">
+                        <label for="number" class="label_text">Include Numbers</label>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" id="symbol" class="checkbox">
+                        <label for="symbol" class="label_text">Include Symbols</label>
+                    </div>
+                </div>
+
+                <div class="strength_section">
+                    <div class="label_text">Strength</div>
+                    <div class="circle"></div>
+                </div>
+
+                <button class="generate_buttom">GENERATE PASSWORD</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
